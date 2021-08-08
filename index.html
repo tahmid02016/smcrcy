@@ -12,18 +12,47 @@
   		@font-face { font-family: Kalpurush; src: url("font/kalpurush.ttf"); }
   		html, body { margin: 0; padding: 0; }
   		body { font-family: Kalpurush; }
-  		header { padding: 16px 0; }
-  		.container { margin-top: 30px; }
+  		.container + .container { margin-top: 30px; }
   		.rcy-principles .card { height: 300px; }
   </style>
 </head>
 
 <body class="bg-dark text-white">
-		<header class="bg-black">
-				<div class="container" style="margin-top: 0px;">
+		<header class="mb-4">
+<nav class="navbar navbar-dark bg-black">
+		<div class="container">
+				<a class="navbar-brand" href="#">
 				<div class="display-5" style="color: #0B6623;"> শাহ মখদুম কলেজ </div>
 				<div class="display-1" style="color: red;"> রেড ক্রিসেন্ট দল </div>
-				</div>
+				</a>
+				<button class="navbar-toggler border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header">
+								<h1 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: red;">রেড ক্রিসেন্ট</h1>
+								<button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+								<div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+										<h3 class="fw-normal">রেড ক্রিসেন্ট দল</h3>
+										<a class="nav-link text-white" href="https://smcrcy.webnode.com">ওয়েবসাইট</a>
+										<a class="nav-link text-white" href="mailto:smc.rcy01@gmail.com">ইমেইল</a>
+										<a class="nav-link text-white" href="https://m.facebook.com/smcrcy.raj/">ফেসবুক পাতা</a>
+										<hr>
+										<h3 class="fw-normal">শাহ মখদুম কলেজ</h3>
+										<a class="nav-link text-white" href="http://smcraj.edu.bd/">ওয়েবসাইট</a>
+										<a class="nav-link text-white" href="mailto:shahmakhdumcollege@gmail.com">ইমেইল</a>
+										<a class="nav-link text-white" href="https://www.facebook.com/smcrajedubd/">ফেসবুক পাতা</a>
+										<hr>
+										<h3 class="fw-normal">জরুরী সংযোগ</h3>
+										<a class="nav-link text-white" href="http://fireservice.rajshahi.gov.bd/">ফায়ার সার্ভিস</a>
+										<a class="nav-link text-white" href="http://www.rajshahi.gov.bd/site/page/77d3ba20-1ab0-11e7-8120-286ed488c766/হাসপাতাল-ও-ক্লিনিক/">হাসপাতাল ও ক্লিনিক</a>
+								</div> <!-- close navbar-nav -->
+						</div> <!-- close offcanvas-body -->
+				</div> <!-- close offcanvas -->
+		</div> <!-- close container -->
+</nav>
 		</header>
 		<div class="container rcy-principles">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
