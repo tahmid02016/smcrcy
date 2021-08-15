@@ -1,0 +1,56 @@
+/* stylesheet for SMCRCY App */
+/* +++++++++++++++++++++++++
+setup style
++++++++++++++++++++++++++++ */
+* { box-sizing: border-box; }
+html { margin: 0; padding: 0; }
+body { margin: 0; padding: 0; height: 100vh; }
+a { color: inherit; text-decoration: none; }
+/* ++++++++++++++++++++++++++
+general style
+++++++++++++++++++++++++++++ */
+.page {
+  background-color: white; color: black; position: fixed; top: 0; left: -100%; height: 100vh; width: 100vw; }
+/* +++++++++++++++++++++++++
+welcome page style
++++++++++++++++++++++++++++ */
+.welcm-pg { padding: 5vh 2vw; }
+.welcm-pg-img { display: block; width: 100%; height: auto; }
+/* ++++++++++++++++++++++++++
+home page style
+++++++++++++++++++++++++++++ */
+.home-pg { padding: 2vh 10px; }
+/* hamburger icon style */
+.hamburger { position: absolute; top: 2vh; right: 10px; z-index: 2; }
+.hamburger .bar1, .bar2, .bar3 { width: 35px; height: 5px; margin-bottom: 6px; background-color: lime; transition: 1s; }
+.close-menu .bar1 { transform: rotate(-45deg) translate(-9px, 7px); -webkit-transform: rotate(-45deg) translate(-9px, 7px); }
+.close-menu .bar2 { opacity: 0; }
+.close-menu .bar3 { transform: rotate(45deg) translate(-8px, -8px) }
+/* +++++++++++++++++++++++++
+menu page style
+++++++++++++++++++++++++++ */
+.menu-pg { padding: 10vh 50px; transition: 1s; }
+.menu-item-title { font-size: 20px; font-weight: 900; margin: 20px 0 10px 0; }
+.menu-item { text-align: center; background-color: grey; padding: 10px; margin-left; 50px; border-radius: 20px; }
+.menu-item + .menu-item { margin-top: 10px; }
+.menu-item-box { border-top: 2px solid lightgrey; margin-top: 20px; padding-top: 10px; font-size: 20px; }
+/* +++++++++++++++++++++++++
+app info page style
++++++++++++++++++++++++++++ */
+.app-inf-pg { padding: 5vh 5vw; text-align: center; z-index: 3 }
+.cls-app-inf { display: block; font-size: 4vh; padding: 2vh; margin: 2vh auto; outline: none; border: none; background-color: #4f5d5d; color: white; font-weight: 600; width: 60%; border-radius: 3vh; box-shadow: 0 5px 0 lightgrey; }
+
+/* ++++++++++++++++++++++++
+main content of home page
+++++++++++++++++++++++++++ */
+.home-itm-container { text-align: center; width: 100%; height: 80vh; margin: 2vh 0 80vh 0; padding: 5vh 10px; border: 5px solid lime; border-radius: 5vh; }
+.home-itm { background-color: lightgrey; margin-bottom: 10vh; height: 30vh; border-radius: 5vh; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); }
+.home-itm-logo { display: block; margin: 0 auto; width: 20vh; height: 20vh; }
+.home-itm-title { color: black; background-color: #dcdcdc; padding: 5px 0; }
+/* +++++++++++++++++++++++
+red crescent and college page style
++++++++++++++++++++++++++ */
+.rc-pg, .clg-pg { padding: 0 10px; }
+.link-box { width: 100%; height: 10vh; line-height: 10vh; text-align: center; background-color: #dcdcdc; color: black; margin-top: 3vh; border-radius: 5vh; }
+.link-box::last-child { margin-bottom: 3vh; }
+.page-logo { display: block; margin: 1vh auto 0 auto; width: 15vh; height: 15vh; }
