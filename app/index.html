@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  <title> SMCRCY App </title>
+  <link rel="stylesheet" href="smcrcy-app-style.css">
+</head>
+
+<body>
+  <!-- welcome page: appears when you first open the app -->
+  <div class="page welcm-pg" id="welcm-pg">
+    <div style="text-align: center;"> App Version: 1.1 alpha </div>
+    <img class="welcm-pg-img" src="img/smcrcy-logo.png">
+  </div> <!-- close wellcome page -->
+  
+  <!-- home page -->
+  <div class="page home-pg" id="home-pg">
+    <div class="hamburger" id="hamburger" onclick="menuHandler()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div style="font-size: 5vh; text-align: left;"> Home </div>
+    
+    <!-- menu page -->
+    <div class="page menu-pg" id="menu-pg">
+      <h3 class="menu-item-title">  Theme </h3>
+      <div class="menu-item" onclick="themeHandler('white')"> Light </div>
+      <div class="menu-item" onclick="themeHandler('#0f2d3d')"> Dark </div>
+      <h3 class="menu-item-title"> Language </h3>
+      <div class="menu-item" onclick="langHandler('bn')"> Bangla </div>
+      <div class="menu-item" onclick="langHandler('en')"> English </div>
+      <div class="menu-item-box" onclick="appInfoPageHandler(1)"> App Info </div>
+      <div class="menu-item-box"><a href="mailto:t4hm1d02016@gmail.com?subject=SMCRCY App Bug Report"> Bug Report </a></div>
+    </div> <!-- close menu page -->
+    
+    <!-- app info page -->
+    <div class="page app-inf-pg" id="app-inf-pg">
+      App Name: SMCRCY App (Web)<br>
+      Version: 1.1 alpha</br>
+      Developer: Md. Tahmid Hossain</br>
+      <button class="cls-app-inf" onclick="appInfoPageHandler(0)"> Back </button>
+    </div> <!-- close app info page -->
+    
+    <!-- main contents of home page -->
+    <div class="home-itm-container">
+      <div class="home-itm" onclick="redCrescentPageHandler(1)">
+        <img class="home-itm-logo" src="img/smcrcy-logo.png">
+        <div class="home-itm-title"> Red Crescent Youth </div>
+      </div>
+      <div class="home-itm" onclick="collegePageHandler(1)">
+        <img class="home-itm-logo" src="img/smcraj-logo.png">
+        <div class="home-itm-title"> Shah Makhdum College </div>
+      </div>
+    </div>
+  </div> <!-- close home page -->
+  
+  <!-- red crescent page -->
+  <div class="page rc-pg" id="rc-pg">
+    <img class="page-logo" src="img/smcrcy-logo.png" onclick="redCrescentPageHandler(0)">
+    <div class="link-box"><a href="https://smcrcy.webnode.com"> Official Website </a></div>
+    <div class="link-box"><a href="https://facebook.com/Shah-Makhdum-College-Red-Crescent-Youth-Rajshahi-1696187780623528/"> Facebook Page </a></div>
+    <div class="link-box"><a href="https://facebook.com/smcrcy"> Facebook Account </a></div>
+    <div class="link-box"><a href="https://smcrcy.webnode.com/find-donor/"> Request for Blood </a></div>
+    <div class="link-box"><a href="https://smcrcy.webnode.com/blood-donor/"> Become Blood Donor </a></div>
+    <div class="link-box"><a href="https://smcrcy.webnode.com/contact-us/"> Contact Information </a></div>
+  </div> <!-- close red crescent page -->
+  
+  <!-- College page -->
+  <div class="page clg-pg" id="clg-pg">
+    <img class="page-logo" src="img/smcraj-logo.png" onclick="collegePageHandler(0)".>
+    <div class="link-box"><a href="https://smcraj.edu.bd/"> About </a></div>
+    <div class="link-box"><a href="https://smcraj.edu.bd/"> Official Website </a></div>
+    <div class="link-box"><a href="https://www.facebook.com/smcrajedubd/"> Facebook Page </a></div>
+    <div class="link-box"><a href="#"> Facebook Account </a></div>
+    <div class="link-box"><a href="https://smcraj.edu.bd/notice/"> Notice </a></div>
+    <div class="link-box"><a href="https://smcraj.edu.bd/contact-us/"> Contact Information </a></div>
+  </div> <!-- close college page -->
+  
+  <!-- javascript -->
+  <script src="smcrcy-app-script.js"></script>
+</body>
