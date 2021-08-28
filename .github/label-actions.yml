@@ -1,0 +1,14 @@
+# Configuration for Label Actions - https://github.com/dessant/label-actions
+
+# Actions taken when the `wontfix` label is added to issues or pull requests
+wontfix:
+  close: true
+
+# Actions taken when the `wontfix` label is removed from issues or pull requests
+-wontfix:
+  # Reopen the thread
+  reopen: true
+
+# Actions taken when the `bug` label is added to issues
+bug:
+  label: 'priority:high'
